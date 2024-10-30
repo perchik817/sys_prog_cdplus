@@ -1,0 +1,7 @@
+﻿  less001.cpp
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\less001.cpp(33,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\less001.cpp(34,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\less001.cpp(57,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\less001.cpp(58,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\less001.cpp(213,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  less001.vcxproj -> C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\less001\x64\Debug\less001.exe

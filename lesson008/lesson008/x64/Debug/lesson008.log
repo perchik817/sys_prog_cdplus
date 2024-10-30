@@ -1,0 +1,18 @@
+﻿  lesson008.cpp
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,13): warning C4244: инициализация: преобразование "T" в "int", возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,13): warning C4244:         with
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,13): warning C4244:         [
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,13): warning C4244:             T=double
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,13): warning C4244:         ]
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(148,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(148,14):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(233,15):
+  	выполняется компиляция ссылки на экземпляр шаблон функции "T sumSecondaryDiagonal<double>(const std::vector<std::vector<double,std::allocator<double>>,std::allocator<std::vector<double,std::allocator<double>>>> &)"
+          with
+          [
+              T=double
+          ]
+  
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\lesson008.cpp(149,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  lesson008.vcxproj -> C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson008\x64\Debug\lesson008.exe

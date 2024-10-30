@@ -1,0 +1,4 @@
+﻿  practice.cpp
+practice\x64\Debug\lesson002.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+practice.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl f(int)" (?f@@YAHH@Z) в функции main.
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\practice\x64\Debug\practice.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

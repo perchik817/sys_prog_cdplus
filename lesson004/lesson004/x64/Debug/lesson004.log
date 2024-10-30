@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson004\main.cpp(7,21): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson004\main.cpp(12,19): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  lesson004.vcxproj -> C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson004\x64\Debug\lesson004.exe
