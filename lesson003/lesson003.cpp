@@ -4,6 +4,28 @@
 #include <cmath>
 #include <iomanip>
 
+std::string pointLocation(float x, float y) {
+    const float minX = 0, minY = 0;
+    const float maxX = 40, maxY = 40;
+    if ((x == minX || x == maxX) && (y >= minY && y <= maxY) ||
+        (y == minY || y == maxY) && (x >= minX && x <= maxX)) return "на границе";
+    else if (x > minX && x < maxX && y > minY && y < maxY) return "да";
+    else return "нет";
+}
+
+void firstPart() {
+    //I. Дана точка на плоскости с координатами (х, у). Составить программу, которая выдает одно из сообщений «Да», «Нет», 
+    // «На границе» в зависимости от того, лежит ли точка внутри заштрихованной области, вне заштрихованной области или на 
+    // ее границе.Области задаются графически следующим образом :
+    float x, y;
+    std::cout << "Введите координаты точек x y: ";
+    std::cin >> x >> y;
+    std::cout << "x\t" << "y\t" << "ответ" << std::endl;
+    std::cout << "--------------------" << std::endl;
+    std::string answer = pointLocation(x, y);
+    std::cout << x << "\t" << y << "\t" << answer << std::endl;
+}
+
 void printNames(const std::string names[]) {
     for (int i = 0; i < names->length(); i++) {
         std::cout << names[i] << " ";
@@ -54,15 +76,32 @@ void fourthPart() {
 }
 
 float f(float x) {
+    if ((pow(x, 4) - 1) <= 0 || (1 + x) <= 0) {
+        throw std::domain_error("Function is undefined at this point.");
+    }
     return log10(pow(x, 4) - 1) * log10(1 + x);
 }
 void fifthPart() {
-    //V.Построить таблицу значений функции у - f(x) для х е[а, b] с шагом h.Если в некоторой точке х функция не определена, 
+    //V.Построить таблицу значений функции у = f(x) для х е[а, b] с шагом h.Если в некоторой точке х функция не определена, 
     // вывести на экран сообщение об этом.
-    float x;
-    std::cout << "Enter x: ";
-    std::cin >> x;
-    std::cout << "Result of y = ln(x^4 - 1)ln(1 + x) is " << f(x) << std::endl;
+    float a, b, h;
+    std::cout << "Enter start (a): ";
+    std::cin >> a;
+    std::cout << "Enter end (b): ";
+    std::cin >> b;
+    std::cout << "Enter step (h): ";
+    std::cin >> h;
+
+    std::cout << "x\tf(x)\n";
+    for (float x = a; x <= b; x += h) {
+        try {
+            float result = f(x);
+            std::cout << x << "\t" << std::fixed << std::setprecision(5) << result << "\n";
+        }
+        catch (const std::domain_error& e) {
+            std::cout << x << "\t" << "Function is undefined\n";
+        }
+    }
 }
 
 double func(double x) {
@@ -73,15 +112,15 @@ double func(double x) {
 }
 
 void printTable(double& a, double& b, double& h) {
-    //std::setw(10), это означает, что следующий элемент, который будет выведен, будет занимать минимум 
+    //std::setw(10) - это означает, что следующий элемент, который будет выведен, будет занимать минимум 
     // 10 символов в ширину. Если строка или число короче этого значения, вывод будет дополнен пробелами 
     // слева. Если строка длиннее, она будет выведена полностью, без обрезки.
-    std::cout << std::setw(10) << "x" << std::setw(10) << "y" << std::endl;
+    std::cout << std::setw(24) << "x" << std::setw(24) << "y" << std::endl;
     std::cout << "--------------------" << std::endl;
 
     for (double x = a; x <= b; x += h) {
         double y = func(x);
-        std::cout << std::setw(10) << x << std::setw(10) << y << std::endl;
+        std::cout << std::setw(24) << x << std::setw(24) << y << std::endl;
     }
 }
 void sixthPart() {
@@ -108,10 +147,11 @@ void sixthPart() {
 int main()
 {
     setlocale(LC_ALL, "Russian");
+    //firstPart();
     //secondPart();
     //thirdPart();
     //fourthPart();
-    //fi/fthPart();
-    sixthPart();
+    //fifthPart();
+    //sixthPart();
     return 0;
 }

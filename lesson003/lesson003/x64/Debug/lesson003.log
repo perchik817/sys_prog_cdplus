@@ -1,4 +1,5 @@
 ﻿  lesson003.cpp
-C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\lesson003.cpp(57,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
-C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\lesson003.cpp(74,1): warning C4715: func: значение возвращается не при всех путях выполнения
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\lesson003.cpp(82,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\lesson003.cpp(101,41): warning C4101: e: неиспользованная локальная переменная
+C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\lesson003.cpp(112,1): warning C4715: func: значение возвращается не при всех путях выполнения
   lesson003.vcxproj -> C:\Users\User\Desktop\Kyz Saikal\My works\sys_prog\lesson003\x64\Debug\lesson003.exe
